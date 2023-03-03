@@ -88,6 +88,6 @@ rows = hsbcFin(file)
 
 for row in rows:
     wks.insert_row([row[0], row[1], row[3], row[2]],2)
-    time.sleep(2)
+    time.sleep(1)
 
 
