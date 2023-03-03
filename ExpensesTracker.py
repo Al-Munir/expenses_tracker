@@ -29,6 +29,12 @@ def hsbcFin(file):
             elif 'eat' in description:
                 category = 'FOOD'  
 
+            elif 'food' in description:
+                category = 'FOOD'  
+
+            elif 'takeaway' in description:
+                category = 'FOOD' 
+
             elif 'ee limited' in description:
                 category = 'MOBILE'  
 
@@ -48,7 +54,25 @@ def hsbcFin(file):
                 category = 'CASH WITHDRAWAL' 
 
             elif 'minted' in description:
-                category = 'GOLD INVESTMENT' 
+                category = 'INVESTMENTS' 
+            
+            elif 'cinema' in description:
+                category = 'ENTERTAINMENT'
+            
+            elif 'udemy' in description:
+                category = 'COURSE SUBSCRIPTIONS'  
+
+            elif 'coursra' in description:
+                category = 'COURSE SUBSCRIPTIONS'  
+
+            elif 'wedding' in description:
+                category = 'WEDDING EXPENSES'  
+
+            elif 'london borough of london vis' in description:
+                category = 'TRAVEL'  
+
+            elif 'paypal' in description:
+                category = 'PURCHASES'  
 
             transaction = ((date, description2, amount, category))
             print(transaction)
